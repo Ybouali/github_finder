@@ -1,11 +1,11 @@
 import  axios from 'axios'
 
-const GETHUB_URL = process.env.REACT_APP_GETHUB_URL
-const GETHUB_TOKEN = process.env.REACT_APP_GETHUB_TOKEN
+const GITHUB_URL = process.env.REACT_APP_GITHUB_URL
+const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN
 
 const github = axios.create({
-    baseURL: GETHUB_URL,
-    headers: { Authorization: `token ${GETHUB_TOKEN}` }
+    baseURL: GITHUB_URL,
+    headers: { Authorization: `token ${GITHUB_TOKEN}` }
 })
 
 // Search users by name 
